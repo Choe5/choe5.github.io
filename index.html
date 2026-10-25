@@ -64,6 +64,13 @@ body {
   background-attachment: fixed;
 }
 a { color: inherit; }
+/* 線條圖示：Lucide（https://lucide.dev，ISC 授權），內嵌 SVG，顏色跟著文字 */
+.ic { width: 1.1em; height: 1.1em; vertical-align: -0.2em; flex: none; }
+.kicker .ic { color: var(--apricot); }
+.chip { display: inline-flex; align-items: center; gap: 6px; }
+.chip .ic { color: var(--cyan); }
+.contact p .ic { color: var(--apricot); }
+.ic.heart { color: var(--coral); fill: var(--coral); }
 .mono { font-family: "JetBrains Mono", ui-monospace, monospace; letter-spacing: .04em; }
 .wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
 
@@ -78,7 +85,7 @@ nav {
 }
 nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 60px; }
 .logo { display: flex; align-items: center; gap: 10px; font-weight: 700; text-decoration: none; font-size: 1.05rem; }
-.logo img { width: 28px; height: 28px; }
+.logo img { width: 34px; height: 34px; }
 .nav-links { display: flex; align-items: center; gap: 22px; font-size: .95rem; }
 .nav-links a { text-decoration: none; color: var(--muted); }
 .nav-links a:hover { color: var(--ink); }
@@ -211,7 +218,7 @@ footer { padding: 40px 0 50px; text-align: center; color: var(--muted); font-siz
 
 <nav>
   <div class="wrap">
-    <a class="logo" href="#top"><img src="favicon.svg" alt="" width="28" height="28">ChoeChoeStudio</a>
+    <a class="logo" href="#top"><img src="images/logo-bird.png" alt="" width="34" height="34">ChoeChoeStudio</a>
     <div class="nav-links">
       <a href="#apps"><span class="zh">App</span><span class="en">Apps</span></a>
       <a href="#contact"><span class="zh">聯絡</span><span class="en">Contact</span></a>
@@ -226,7 +233,7 @@ footer { padding: 40px 0 50px; text-align: center; color: var(--muted); font-siz
 <header class="hero" id="top">
   <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div>
   <div class="wrap">
-    <p class="kicker mono">// HELLO, WORLD 👋</p>
+    <p class="kicker mono">// HELLO, WORLD <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2"/><path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2"/><path d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8"/><path d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"/></svg></p>
     <h1>ChoeChoeStudio</h1>
     <p class="tagline">
       <span class="zh">做一些讓學習和遊戲更有趣的小 App</span>
@@ -241,8 +248,8 @@ footer { padding: 40px 0 50px; text-align: center; color: var(--muted); font-siz
       <a class="btn ghost" href="#contact"><span class="zh">聯絡我們</span><span class="en">Get in touch</span></a>
     </div>
     <div class="chips">
-      <span class="chip">📱 <span class="zh">5 款 App 上架 Google Play</span><span class="en">5 apps on Google Play</span></span>
-      <span class="chip">🤖 Android</span>
+      <span class="chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg><span class="zh">5 款 App 上架 Google Play</span><span class="en">5 apps on Google Play</span></span>
+      <span class="chip"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="10" height="14" x="3" y="8" rx="2"/><path d="M5 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2h-2.4"/><path d="M8 18h.01"/></svg>Android</span>
     </div>
   </div>
 </header>
@@ -265,17 +272,17 @@ footer { padding: 40px 0 50px; text-align: center; color: var(--muted); font-siz
       <div class="mono">// CONTACT</div>
       <h2><span class="zh">聯絡我們</span><span class="en">Contact Us</span></h2>
       <p>
-        <span class="zh">有想法、建議，或使用上遇到問題，都歡迎來信 ☕</span>
-        <span class="en">Ideas, feedback, or need a hand? We'd love to hear from you ☕</span>
+        <span class="zh">有想法、建議，或使用上遇到問題，都歡迎來信 <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2v2"/><path d="M14 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/><path d="M6 2v2"/></svg></span>
+        <span class="en">Ideas, feedback, or need a hand? We'd love to hear from you <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2v2"/><path d="M14 2v2"/><path d="M16 8a1 1 0 0 1 1 1v8a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4V9a1 1 0 0 1 1-1h14a4 4 0 1 1 0 8h-1"/><path d="M6 2v2"/></svg></span>
       </p>
-      <a class="btn warm mail" href="mailto:choe5@live.com">✉️ choe5@live.com</a>
+      <a class="btn warm mail" href="mailto:choe5@live.com"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>choe5@live.com</a>
     </div>
   </div>
 </section>
 </main>
 
 <footer>
-  <div class="wrap">© 2026 ChoeChoeStudio · <span class="zh">在台灣用心製作 ♥</span><span class="en">Made with ♥ in Taiwan</span></div>
+  <div class="wrap">© 2026 ChoeChoeStudio · <span class="zh">在台灣用心製作 <svg class="ic heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg></span><span class="en">Made with <svg class="ic heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> in Taiwan</span></div>
 </footer>
 
 <script>
